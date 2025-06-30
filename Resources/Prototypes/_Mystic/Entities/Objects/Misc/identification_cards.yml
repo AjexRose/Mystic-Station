@@ -6,11 +6,11 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _Mystic\Objects\Misc\id-cards.rsi
+    sprite: _Mystic/Objects/Misc/id-cards.rsi
   - type: Clothing
     slots:
     - idcard
-    sprite: _Mystic\Objects\Misc\id-cards.rsi
+    sprite: _Mystic/Objects/Misc/id-cards.rsi
   - type: Item
     size: Small
     heldPrefix: default

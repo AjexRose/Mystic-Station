@@ -4,10 +4,8 @@
   suffix: Anemo
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: anemoSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: anemoSlime
   - type: RandomSpawner
     prototypes:
       - SmallElementSlimeAnemo
@@ -18,10 +16,8 @@
   suffix: Areno
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: arenoSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: arenoSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimeAreno
@@ -32,10 +28,8 @@
   suffix: Chrono
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: chronoSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: chronoSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimeChrono
@@ -46,10 +40,8 @@
   suffix: Cryo
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: cryoSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: cryoSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimeCryo
@@ -60,10 +52,8 @@
   suffix: Dendro
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: dendroSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: dendroSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimeDendro
@@ -74,10 +64,8 @@
   suffix: Electro
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: electroSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: electroSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimeElectro
@@ -88,10 +76,8 @@
   suffix: Geo
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: geoSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: geoSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimeGeo
@@ -102,10 +88,8 @@
   suffix: Helio
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: helioSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: helioSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimeHelio
@@ -116,10 +100,8 @@
   suffix: Hydro
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: hydroSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: hydroSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimeHydro
@@ -130,10 +112,8 @@
   suffix: Pondo
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: pondoSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: pondoSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimePondo
@@ -144,10 +124,8 @@
   suffix: Pyro
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: pyroSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: pyroSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimePyro
@@ -158,24 +136,20 @@
   suffix: Tenebro
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: tenebroSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: tenebroSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimeTenebro
 
 - type: entity
-  id: SmallRandomSpawner
+  id: SmallRandomSlimeSpawner
   name: small slime spawner
   suffix: Random
   components:
   - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
-      state: anemoSlime
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    state: anemoSlime
   - type: RandomSpawner
     prototypes:
     - SmallElementSlimeAnemo

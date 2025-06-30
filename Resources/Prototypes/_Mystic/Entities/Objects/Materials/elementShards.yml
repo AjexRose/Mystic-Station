@@ -136,21 +136,6 @@
     count: 1
     stackType: ElementShardGeo
 
-#- type: entity
-#  parent: ElementShardBase
-#  id: ElementShardHelio
-#  name: helio crystal shard
-#  description: A small piece of crystal.
-#  components:
-#  - type: Sprite
-#    layers:
-#    - sprite: _Mystic/Objects/crystalItem.rsi
-#      state: helioCrystal
-#      map: [ "enum.DamageStateVisualLayers.Base" ]
-#  - type: Stack
-#    count: 1
-#    stackType: ElementShardHelio
-
 - type: entity
   parent: ElementShardBase
   id: ElementShardHelio

@@ -49,6 +49,8 @@
   - OS-Marine
   - OS-Paramedic
   - OS-Tech
+  - GenpopEnter
+  - GenpopLeave
 
   # Engineering
 - type: accessLevel

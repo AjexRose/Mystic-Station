@@ -18,6 +18,11 @@
     borderColor: "#7C5D00"
   - type: Icon
     state: pda-captain
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-captain
 
 # Engineering
 - type: entity
@@ -28,6 +33,17 @@
   components:
   - type: Sprite
     sprite: _Mystic/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-os-tech"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: OS-TechIDCard
     state: pda-os-tech
@@ -38,6 +54,11 @@
   - type: Icon
     sprite: _Mystic/Objects/Devices/pda.rsi
     state: pda-os-tech
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-os-tech
 
 #Security
 - type: entity
@@ -54,6 +75,11 @@
     accentHColor: "#447987"
   - type: Icon
     state: pda-hos
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-hos
 
 - type: entity
   parent: BasePDA
@@ -63,6 +89,17 @@
   components:
   - type: Sprite
     sprite: _Mystic/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-os-marine"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: OS-MarineIDCard
     state: pda-os-marine
@@ -73,6 +110,11 @@
   - type: Icon
     sprite: _Mystic/Objects/Devices/pda.rsi
     state: pda-os-marine
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-os-marine
 
 #Arcaneology
 - type: entity
@@ -83,6 +125,17 @@
   components:
   - type: Sprite
     sprite: _Mystic/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-archivist"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: ArchivistIDCard
     state: pda-archivist
@@ -93,6 +146,11 @@
   - type: Icon
     sprite: _Mystic/Objects/Devices/pda.rsi
     state: pda-archivist
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-archivist
 
 - type: entity
   parent: BasePDA
@@ -102,6 +160,17 @@
   components:
   - type: Sprite
     sprite: _Mystic/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-divinologist"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: DivinologistIDCard
     state: pda-divinologist
@@ -112,6 +181,11 @@
   - type: Icon
     sprite: _Mystic/Objects/Devices/pda.rsi
     state: pda-divinologist
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-divinologist
 
 - type: entity
   parent: BasePDA
@@ -127,6 +201,11 @@
     accentVColor: "#8900c9"
   - type: Icon
     state: pda-internsci
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-internsci
 
 - type: entity
   parent: BasePDA
@@ -142,6 +221,11 @@
     accentVColor: "#8900c9"
   - type: Icon
     state: pda-science
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-science
 
 - type: entity
   parent: BasePDA
@@ -158,6 +242,11 @@
     accentVColor: "#8900c9"
   - type: Icon
     state: pda-rd
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-rd
 
 - type: entity
   parent: BasePDA
@@ -167,6 +256,17 @@
   components:
   - type: Sprite
     sprite: _Mystic/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-os-arcanaut"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: OSArcanautIDCard
     state: pda-os-arcanaut
@@ -177,6 +277,11 @@
   - type: Icon
     sprite: _Mystic/Objects/Devices/pda.rsi
     state: pda-os-arcanaut
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-os-arcanaut
 
 #Logistics
 - type: entity
@@ -192,6 +297,11 @@
     borderColor: "#e39751"
   - type: Icon
     state: pda-cargo
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-cargo
 
 - type: entity
   parent: BasePDA
@@ -207,6 +317,11 @@
     accentVColor: "#a23e3e"
   - type: Icon
     state: pda-qm
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-qm
 
 # Medical
 - type: entity
@@ -217,6 +332,17 @@
   components:
   - type: Sprite
     sprite: _Mystic/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-os-paramedic"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: OSParamedicIDCard
     state: pda-os-paramedic
@@ -227,6 +353,11 @@
   - type: Icon
     sprite: _Mystic/Objects/Devices/pda.rsi
     state: pda-os-paramedic
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-os-paramedic
 
 # Service
 - type: entity
@@ -249,3 +380,8 @@
     accentHColor: "#447987"
   - type: Icon
     state: pda-hop
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-hop

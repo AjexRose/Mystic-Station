@@ -18,15 +18,24 @@
   id: Detective
   name: id-card-access-level-detective
 
-- type: accessGroup
-  id: Security
-  tags:
-  - HeadOfSecurity
-  - Security
-  - Armory
-  - Brig
-  - Detective
-  - Cryogenics
+- type: accessLevel
+  id: GenpopEnter
+  name: id-card-access-level-genpop-enter
+
+- type: accessLevel
+  id: GenpopLeave
+  name: id-card-access-level-genpop-leave
+
+#MYSTIC
+#- type: accessGroup
+#  id: Security
+#  tags:
+#  - HeadOfSecurity
+#  - Security
+#  - Armory
+#  - Brig
+#  - Detective
+#  - Cryogenics
 
 - type: accessGroup
   id: Armory

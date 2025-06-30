@@ -1,5 +1,74 @@
 - type: department
+  id: Arcaneology
+  name: department-Arcaneology
+  description: department-mystic-Arcaneology-description
+  color: "#D381C9"
+  roles:
+  - Archivist
+  - Divinologist
+  - MasterArcanist
+  - MysticFledgling
+  - MysticResearcher
+  - OS-Arcanaut
+
+- type: department
+  id: CentralCommand
+  name: department-CentralCommand
+  description: department-CentralCommand-description
+  color: "#0c344d"
+  roles:
+  - CentralCommandOfficial
+  - CBURN
+  - ERTLeader
+  - ERTChaplain
+  - ERTJanitor
+  - ERTMedical
+  - ERTSecurity
+  - ERTEngineer
+  - DeathSquad
+  editorHidden: true
+  weight: 120
+
+- type: department
+  id: Command
+  name: department-Command
+  description: department-mystic-Command-description
+  color: "#334E6D"
+  roles:
+  - CentralCommandOfficial
+  - ChiefEngineer
+  - ChiefMedicalOfficer
+  - ChiefSecurityOfficer
+  - Director
+  - MasterArcanist
+  - ServiceLeader
+  - Quartermaster
+  - CBURN
+  - ERTLeader
+  - ERTChaplain
+  - ERTJanitor
+  - ERTMedical
+  - ERTSecurity
+  - ERTEngineer
+  - DeathSquad
+  primary: false
+  weight: 100
+
+- type: department
+  id: Engineering
+  name: department-Engineering
+  description: department-mystic-Engineering-description
+  color: "#EFB341"
+  roles:
+  - AtmosphericTechnician
+  - ChiefEngineer
+  - OS-Tech
+  - StationEngineer
+  - TechnicalAssistant
+
+- type: department
   id: Logistics
+  name: department-Logistics
   description: department-mystic-Logistics-description
   color: "#A46106"
   roles:
@@ -7,7 +76,36 @@
   - Quartermaster
 
 - type: department
+  id: Medical
+  name: department-Medical
+  description: department-mystic-Medical-description
+  color: "#52B4E9"
+  roles:
+  - Chemist
+  - ChiefMedicalOfficer
+  - MedicalDoctor
+  - MedicalIntern
+  - OS-Paramedic
+  - Psychologist
+  - Paramedic
+
+- type: department
+  id: Security
+  name: department-Security
+  description: department-mystic-Security-description
+  color: "#DE3A3A"
+  weight: 20
+  roles:
+  - ChiefSecurityOfficer
+  - SecurityCadet
+  - SecurityOfficer
+  - Detective
+  - OS-Marine
+  - Warden
+
+- type: department
   id: Service
+  name: department-Service
   description: department-mystic-Service-description
   color: "#9FED58"
   weight: -10
@@ -30,72 +128,17 @@
   - ServiceWorker
 
 - type: department
-  id: Command
-  description: department-mystic-Command-description
-  color: "#334E6D"
-  roles:
-  - CentralCommandOfficial
-  - ChiefEngineer
-  - ChiefMedicalOfficer
-  - ChiefSecurityOfficer
-  - Director
-  - MasterArcanist
-  - ServiceLeader
-  - Quartermaster
-  primary: false
-  weight: 100
-
-- type: department
-  id: Engineering
-  description: department-mystic-Engineering-description
-  color: "#EFB341"
-  roles:
-  - AtmosphericTechnician
-  - ChiefEngineer
-  - OS-Tech
-  - StationEngineer
-  - TechnicalAssistant
-
-- type: department
-  id: Medical
-  description: department-mystic-Medical-description
-  color: "#52B4E9"
-  roles:
-  - Chemist
-  - ChiefMedicalOfficer
-  - MedicalDoctor
-  - MedicalIntern
-  - OS-Paramedic
-  - Psychologist
-  - Paramedic
-
-- type: department
-  id: Security
-  description: department-mystic-Security-description
-  color: "#DE3A3A"
-  weight: 20
-  roles:
-  - ChiefSecurityOfficer
-  - SecurityCadet
-  - SecurityOfficer
-  - Detective
-  - OS-Marine
-  - Warden
-
-- type: department
-  id: Arcaneology
-  description: department-mystic-Arcaneology-description
+  id: Silicon
+  name: department-Silicon
+  description: department-Silicon-description
   color: "#D381C9"
   roles:
-  - Archivist
-  - Divinologist
-  - MasterArcanist
-  - MysticFledgling
-  - MysticResearcher
-  - OS-Arcanaut
+  - Borg
+  - StationAi
 
 - type: department
   id: Specific
+  name: department-Specific
   description: department-Specific-description
   color: "#9FED58"
   weight: 10

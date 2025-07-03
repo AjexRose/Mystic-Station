@@ -22,13 +22,14 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretFrench
-  name: French beret
+  name: french beret
   description: A French beret, "vive la France".
   components:
   - type: Sprite
@@ -40,6 +41,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - WhitelistChameleon
 
 - type: entity
@@ -55,14 +57,30 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatSecurityTrooper
+  name: trooper hat
+  description: A campaign hat for the Nanotrasen Troopers, comes with a case too, but you lost it.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/security_trooper_hat.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/security_trooper_hat.rsi
+  - type: Tag
+    tags:
+    - ClothMade
     - WhitelistChameleon
 
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCasa
   name: casa
-  description: Cone-shaped hat
+  description: Cone-shaped hat.
   components:
     - type: Sprite
       sprite: Clothing/Head/Hats/casa.rsi
@@ -82,6 +100,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -98,6 +117,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -114,6 +134,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -130,6 +151,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -167,7 +189,7 @@
     sprite: Clothing/Head/Hats/beret_brigmedic.rsi
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ ClothingHeadBase ]
   id: ClothingHeadHatBeretMerc
   name: mercenary beret
   description: Olive beret, the badge depicts a jackal on a rock.
@@ -176,6 +198,22 @@
     sprite: Clothing/Head/Hats/beret_merc.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_merc.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretCommand
+  name: command beret
+  description: A beret with a Command insignia emblazoned on it. It has an aura of authority.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret_command.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret_command.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingHeadBase
@@ -189,7 +227,7 @@
     sprite: Clothing/Head/Hats/bowler_hat.rsi
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ClothingHeadBase, BaseCommandContraband]
   id: ClothingHeadHatCaptain
   name: captain's hardhat
   description: It's good being the king.
@@ -201,6 +239,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -220,9 +259,9 @@
   - type: IngestionBlocker
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ ClothingHeadBase, BaseCentcommContraband ]
   id: ClothingHeadHatCentcom
-  name: CentCom brand hat
+  name: CentComm brand hat
   description: "It's good to be the emperor."
   components:
   - type: Sprite
@@ -257,6 +296,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -273,6 +313,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -299,7 +340,7 @@
     sprite: Clothing/Head/Hats/fez.rsi
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ClothingHeadBase, BaseCommandContraband]
   id: ClothingHeadHatHopcap
   name: head of personnel's cap
   description: A grand, stylish head of personnel's cap.
@@ -311,11 +352,12 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ClothingHeadBase, BaseCommandContraband]
   id: ClothingHeadHatHoshat
   name: head of security cap
   description: The robust standard-issue cap of the Head of Security. For showing the officers who's in charge.
@@ -327,6 +369,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -340,6 +383,8 @@
     sprite: Clothing/Head/Hats/outlawhat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/outlawhat.rsi
+  - type: StaticPrice
+    price: 500
 
 - type: entity
   parent: ClothingHeadBase
@@ -388,12 +433,12 @@
     tags:
     - WhitelistChameleon
     - ClothMade
+    - Recyclable
   - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadTop
-    - HeadSide
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
 
 - type: entity
   parent: ClothingHeadHatWizardBase
@@ -405,17 +450,42 @@
     sprite: Clothing/Head/Hats/redwizard.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/redwizard.rsi
+  - type: Tag
+    tags:
+    - CorgiWearable
+    - ClothMade
+    - WhitelistChameleon
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ClothingHeadBase, BaseFoldable]
   id: ClothingHeadHatSantahat
   name: santa hat
-  description: "A festive hat worn by Santa Claus"
+  description: A festive hat worn by Santa Claus. Now with a foldable beard.
   components:
-  - type: Sprite
-    sprite: Clothing/Head/Hats/santahat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/santahat.rsi
+  - type: Appearance
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
+    slots: []
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: FoldableClothing
+    foldedEquippedPrefix: nobeard
+    foldedHeldPrefix: nobeard
+  - type: Sprite
+    sprite: Clothing/Head/Hats/santahat.rsi
+    layers:
+    - state: icon
+      map: ["unfoldedLayer"]
+    - state: icon-nobeard
+      map: [ "foldedLayer" ]
+      visible: true
+
+
 
 - type: entity
   parent: ClothingHeadBase
@@ -443,8 +513,14 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
 
 - type: entity
   parent: ClothingHeadBase
@@ -456,6 +532,11 @@
     sprite: Clothing/Head/Hats/surgcap_green.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/surgcap_green.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
 
 - type: entity
   parent: ClothingHeadBase
@@ -467,6 +548,12 @@
     sprite: Clothing/Head/Hats/surgcap_purple.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/surgcap_purple.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
+
 
 - type: entity
   parent: ClothingHeadBase
@@ -481,6 +568,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -495,8 +583,6 @@
   - type: Appearance
   - type: AddAccentClothing
     accent: RussianAccent
-  - type: RussianAccent
-  - type: AccentWearerNameClothing
   - type: Foldable
     canFoldInsideContainer: true
   - type: FoldableClothing
@@ -511,6 +597,43 @@
       map: ["foldedLayer"]
       visible: false
 
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCanadaBeanie
+  name: beanie
+  description: Red, white and snug. It radiates a homely feeling, if your home happens to be chilly and filled with coffeehouses.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beanie.rsi
+    layers:
+    - state: body-icon
+    - state: cuffcrown-icon
+      color: "#a60b0b"
+    - state: pompom-icon
+      color: "#a60b0b"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: body-inhand-left
+      - state: cuffcrown-inhand-left
+        color: "#a60b0b"
+      - state: pompom-inhand-left
+        color: "#a60b0b"
+      right:
+      - state: body-inhand-right
+      - state: cuffcrown-inhand-right
+        color: "#a60b0b"
+      - state: pompom-inhand-right
+        color: "#a60b0b"
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beanie.rsi
+    clothingVisuals:
+      head:
+      - state: body-equipped-HELMET
+      - state: cuffcrown-equipped-HELMET
+        color: "#a60b0b"
+      - state: pompom-equipped-HELMET
+        color: "#a60b0b"
 
 - type: entity
   parent: ClothingHeadHatWizardBase
@@ -522,6 +645,11 @@
     sprite: Clothing/Head/Hats/violetwizard.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/violetwizard.rsi
+  - type: Tag
+    tags:
+    - CorgiWearable
+    - ClothMade
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingHeadBase
@@ -551,6 +679,7 @@
     tags:
     - WhitelistChameleon
     - ClothMade
+    - Recyclable
   - type: HideLayerClothing
     slots:
     - Hair
@@ -565,10 +694,15 @@
     sprite: Clothing/Head/Hats/wizard_fake.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/wizard_fake.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
 
 - type: entity
   abstract: true
-  parent: ClothingHeadBase
+  parent: [ ClothingHeadBase, BaseMagicalContraband ]
   id: ClothingHeadHatWizardBase
   components:
   - type: WizardClothes
@@ -586,8 +720,10 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
+    - CorgiWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -612,7 +748,7 @@
     sprite: Clothing/Head/Hats/truckershat.rsi
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ ClothingHeadBase, BaseSyndicateContraband ]
   id: ClothingHeadPyjamaSyndicateBlack
   name: syndicate black pyjama hat
   description: For keeping that traitor head of yours warm.
@@ -621,9 +757,14 @@
     sprite: Clothing/Head/Hats/pyjamasyndicateblack.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/pyjamasyndicateblack.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ ClothingHeadBase, BaseSyndicateContraband ]
   id: ClothingHeadPyjamaSyndicatePink
   name: syndicate pink pyjama hat
   description: For keeping that traitor head of yours warm.
@@ -632,9 +773,14 @@
     sprite: Clothing/Head/Hats/pyjamasyndicatepink.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/pyjamasyndicatepink.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ ClothingHeadBase, BaseSyndicateContraband ]
   id: ClothingHeadPyjamaSyndicateRed
   name: syndicate red pyjama hat
   description: For keeping that traitor head of yours warm.
@@ -643,6 +789,11 @@
     sprite: Clothing/Head/Hats/pyjamasyndicatered.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/pyjamasyndicatered.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
 
 - type: entity
   parent: ClothingHeadBase
@@ -655,6 +806,11 @@
   - type: Clothing
     sprite: Clothing/Head/Hats/papersack.rsi
   - type: IdentityBlocker
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
 
 - type: entity
   parent: ClothingHeadBase
@@ -667,6 +823,11 @@
   - type: Clothing
     sprite: Clothing/Head/Hats/papersacksmile.rsi
   - type: IdentityBlocker
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
 
 - type: entity
   parent: ClothingHeadBase
@@ -681,6 +842,17 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadWehcellentCap
+  name: wehcellent cap
+  description: It was a net hat! Tiders wear them all the time! It's got airholes in the back to keep a cross-breeze going and everything!
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/wehcellentcap.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/wehcellentcap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
   id: ClothingHeadNurseHat
   name: nurse hat
   description: Somehow I feel I'm not supposed to leave this place.
@@ -692,6 +864,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -705,6 +878,11 @@
     sprite: Clothing/Head/Hats/rasta.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/rasta.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
 
 - type: entity
   parent: ClothingHeadBase
@@ -736,9 +914,14 @@
       sprite: Clothing/Head/Hats/jester2.rsi
     - type: Clothing
       sprite: Clothing/Head/Hats/jester2.rsi
+    - type: HideLayerClothing
+      layers:
+        Hair: HEAD
+        HeadTop : HEAD
+        HeadSide : HEAD
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ClothingHeadBase, BaseCommandContraband]
   id: ClothingHeadHatBeretCmo
   name: chief medical officer's beret
   description: Turquoise beret with a cross on the front. The sight of it calms you down and makes it clear that you will be cured.
@@ -750,6 +933,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -781,6 +965,21 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadHatHolyWatermelon
+  name: watermelon halo
+  description: Holy moly.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/holyhatmelon.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/holyhatmelon.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.95
+
+- type: entity
+  parent: [ClothingHeadBase, BaseSyndicateContraband]
   id: ClothingHeadHatSyndie
   name: syndicate hat
   description: A souvenir hat from "Syndieland", their production has already been closed.
@@ -867,25 +1066,35 @@
     sprite: Clothing/Head/Hats/capcap.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/capcap.rsi
+  - type: Item
+    sprite: Clothing/Head/Hats/capcap.rsi
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - WhitelistChameleon
     - HamsterWearable
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-inanimate
+    weight: 0.0002 # 5,000 times less likely than 1 regular animal
+  - type: BlockMovement
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ ClothingHeadBase, BaseCentcommContraband ]
   id: ClothingHeadHatCentcomcap
-  name: CentCom cap
+  name: CentComm cap
   description: An extravagant, fancy Central Commander cap.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/comcap.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/comcap.rsi
+  - type: Item
+    sprite: Clothing/Head/Hats/comcap.rsi
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - WhitelistChameleon
     - HamsterWearable
 
@@ -899,6 +1108,11 @@
     sprite: Clothing/Head/Hats/gladiator.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/gladiator.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      HeadTop : HEAD
+      HeadSide : HEAD
 
 - type: entity
   parent: ClothingHeadBase
@@ -1102,3 +1316,47 @@
     sprite: Clothing/Head/Hats/beret_medic.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_medic.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatSolidHeadband
+  name: solid headband
+  description: "You'll feel like you're Invisible while wearing this! (DISCLAIMER: DOES NOT ACTUALLY MAKE THE WEARER INVISIBLE)"
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/solidheadband.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/solidheadband.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadPropellerHat
+  name: propeller hat
+  description: You're the bestest boy.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/propellerhat.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Clothing
+    equippedPrefix: off
+    sprite: Clothing/Head/Hats/propellerhat.rsi
+  - type: ToggleableVisuals
+    spriteLayer: enum.ToggleableVisuals.Layer
+    clothingVisuals:
+      head:
+      - state: on-equipped-HELMET
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: icon-on}
+          False: {state: icon}
+  - type: ItemToggle
+    predictable: true
+    soundActivate:
+      path: /Audio/Items/flashlight_on.ogg
+    soundDeactivate:
+      path: /Audio/Items/flashlight_off.ogg

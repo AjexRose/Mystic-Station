@@ -27,6 +27,8 @@ namespace Content.Client.Tabletop
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IGameTiming _gameTiming = default!;
         [Dependency] private readonly AppearanceSystem _appearance = default!;
+        [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
+        [Dependency] private readonly SpriteSystem _sprite = default!;
 
         // Time in seconds to wait until sending the location of a dragged entity to the server again
         private const float Delay = 1f / 10; // 10 Hz
@@ -100,7 +102,7 @@ namespace Content.Client.Tabletop
             if (clampedCoords.Equals(MapCoordinates.Nullspace)) return;
 
             // Move the entity locally every update
-            EntityManager.GetComponent<TransformComponent>(_draggedEntity.Value).WorldPosition = clampedCoords.Position;
+            _transformSystem.SetWorldPosition(_draggedEntity.Value, clampedCoords.Position);
 
             // Increment total time passed
             _timePassed += frameTime;
@@ -223,12 +225,12 @@ namespace Content.Client.Tabletop
             //  the appearance handle the rest
             if (_appearance.TryGetData<Vector2>(uid, TabletopItemVisuals.Scale, out var scale, args.Component))
             {
-                args.Sprite.Scale = scale;
+                _sprite.SetScale((uid, args.Sprite), scale);
             }
 
             if (_appearance.TryGetData<int>(uid, TabletopItemVisuals.DrawDepth, out var drawDepth, args.Component))
             {
-                args.Sprite.DrawDepth = drawDepth;
+                _sprite.SetDrawDepth((uid, args.Sprite), drawDepth);
             }
         }
 
@@ -280,7 +282,7 @@ namespace Content.Client.Tabletop
             if (eye == null)
                 return MapCoordinates.Nullspace;
 
-            var size = (Vector2) viewport.ViewportSize / EyeManager.PixelsPerMeter; // Convert to tiles instead of pixels
+            var size = (Vector2)viewport.ViewportSize / EyeManager.PixelsPerMeter; // Convert to tiles instead of pixels
             var eyePosition = eye.Position.Position;
             var eyeRotation = eye.Rotation;
             var eyeScale = eye.Scale;

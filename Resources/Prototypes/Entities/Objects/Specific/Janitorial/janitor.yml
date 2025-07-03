@@ -25,6 +25,9 @@
       collection: MetalThud
   - type: Spillable
     solution: absorbed
+    spillWhenThrown: false
+  - type: DrainableSolution
+    solution: absorbed
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
@@ -34,6 +37,7 @@
     size: Large
     sprite: Objects/Specific/Janitorial/mop.rsi
   - type: Absorbent
+    useAbsorberSolution: true
   - type: SolutionContainerManager
     solutions:
       absorbed:
@@ -50,6 +54,7 @@
   - type: GuideHelp
     guides:
     - Janitorial
+  - type: DnaSubstanceTrace
 
 - type: entity
   parent: BaseItem
@@ -78,6 +83,9 @@
          collection: MetalThud
     - type: Spillable
       solution: absorbed
+      spillWhenThrown: false
+    - type: DrainableSolution
+      solution: absorbed
     - type: Wieldable
     - type: IncreaseDamageOnWield
       damage:
@@ -88,6 +96,7 @@
       sprite: Objects/Specific/Janitorial/advmop.rsi
     - type: Absorbent
       pickupAmount: 100
+      useAbsorberSolution: true
     - type: UseDelay
       delay: 1.0
     - type: SolutionRegeneration
@@ -109,6 +118,7 @@
       tags:
         - Mop
         - MopAdv
+    - type: DnaSubstanceTrace
 
 - type: entity
   name: wet floor sign
@@ -238,6 +248,7 @@
     embedOnThrow: True
   - type: ThrowingAngle
     angle: 0
+  - type: LandAtCursor
   - type: Ammo
     muzzleFlash: null
   - type: Projectile
@@ -247,6 +258,9 @@
       types:
         Blunt: 3
   - type: Plunger
+  - type: PhysicalComposition
+    materialComposition:
+      Wood: 100
 
 - type: entity
   name: golden plunger
@@ -305,6 +319,9 @@
       fillBaseName: fill-
     - type: Spillable
       solution: absorbed
+      spillWhenThrown: false
+    - type: DrainableSolution
+      solution: absorbed
     - type: MeleeWeapon
       soundNoDamage:
         path: "/Audio/Effects/Fluids/splat.ogg"
@@ -316,6 +333,7 @@
       sprite: Objects/Specific/Janitorial/rag.rsi
     - type: Absorbent
       pickupAmount: 15
+      useAbsorberSolution: true
     - type: Construction
       graph: Rag
       node: rag
@@ -331,3 +349,4 @@
     - type: CleansForensics
     - type: Fiber
       fiberColor: fibers-white
+    - type: DnaSubstanceTrace

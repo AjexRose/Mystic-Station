@@ -34,6 +34,7 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
     [UISystemDependency] private readonly ClientInventorySystem _inventorySystem = default!;
     [UISystemDependency] private readonly HandsSystem _handsSystem = default!;
     [UISystemDependency] private readonly ContainerSystem _container = default!;
+    [UISystemDependency] private readonly SpriteSystem _sprite = default!;
 
     private EntityUid? _playerUid;
     private InventorySlotsComponent? _playerInventory;
@@ -132,6 +133,9 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
         if (clientInv == null)
         {
             _inventoryHotbar?.ClearButtons();
+            if (_inventoryButton != null)
+                _inventoryButton.Visible = false;
+
             return;
         }
 
@@ -239,7 +243,7 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
     {
         if (_inventoryHotbar == null)
         {
-            Logger.Warning("Tried to toggle inventory bar when none are assigned");
+            Log.Warning("Tried to toggle inventory bar when none are assigned");
             return;
         }
 
@@ -360,8 +364,8 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
             }
         }
 
-        hoverSprite.CopyFrom(sprite);
-        hoverSprite.Color = fits ? new Color(0, 255, 0, 127) : new Color(255, 0, 0, 127);
+        _sprite.CopySprite((held, sprite), (hoverEntity, hoverSprite));
+        _sprite.SetColor((hoverEntity, hoverSprite), fits ? new Color(0, 255, 0, 127) : new Color(255, 0, 0, 127));
 
         control.HoverSpriteView.SetEntity(hoverEntity);
     }
@@ -396,6 +400,9 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
         foreach (var slotData in clientInv.SlotData.Values)
         {
             AddSlot(slotData);
+
+            if (_inventoryButton != null)
+                _inventoryButton.Visible = true;
         }
 
         UpdateInventoryHotbar(_playerInventory);
@@ -403,12 +410,17 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
 
     private void UnloadSlots()
     {
+        if (_inventoryButton != null)
+            _inventoryButton.Visible = false;
+
         _playerUid = null;
         _playerInventory = null;
         foreach (var slotGroup in _slotGroups.Values)
         {
             slotGroup.ClearButtons();
         }
+
+        UpdateInventoryHotbar(null);
     }
 
     private void SpriteUpdated(SlotSpriteUpdate update)

@@ -31,8 +31,7 @@
         Blunt: 5
   - type: MeleeThrowOnHit
     unanchorOnHit: true
-    enabled: true
-    lifetime: 0.15
+    stunTime: 0.15
   - type: MultiHandedItem
   - type: Item
     size: Large

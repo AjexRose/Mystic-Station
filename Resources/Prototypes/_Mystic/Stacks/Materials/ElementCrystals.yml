@@ -1,0 +1,83 @@
+- type: stack
+  id: ElementShardAnemo
+  name: stack-crystal-anemo
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: AnemoCrystal}
+  spawn: ElementShardAnemo
+  maxCount: 10
+
+- type: stack
+  id: ElementShardAreno
+  name: stack-crystal-areno
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: ArenoCrystal}
+  spawn: ElementShardAreno
+  maxCount: 10
+
+- type: stack
+  id: ElementShardChrono
+  name: stack-crystal-chrono
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: ChronoCrystal}
+  spawn: ElementShardChrono
+  maxCount: 10
+
+- type: stack
+  id: ElementShardCryo
+  name: stack-crystal-cryo
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: CryoCrystal}
+  spawn: ElementShardCryo
+  maxCount: 10
+
+- type: stack
+  id: ElementShardDendro
+  name: stack-crystal-dendro
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: DendroCrystal}
+  spawn: ElementShardDendro
+  maxCount: 10
+
+- type: stack
+  id: ElementShardElectro
+  name: stack-crystal-electro
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: ElectroCrystal}
+  spawn: ElementShardElectro
+  maxCount: 10
+
+- type: stack
+  id: ElementShardGeo
+  name: stack-crystal-geo
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: GeoCrystal}
+  spawn: ElementShardGeo
+  maxCount: 10
+
+- type: stack
+  id: ElementShardHelio
+  name: stack-crystal-helio
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: HelioCrystal}
+  spawn: ElementShardHelio
+  maxCount: 10
+
+- type: stack
+  id: ElementShardHydro
+  name: stack-crystal-hydro
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: HydroCrystal}
+  spawn: ElementShardHydro
+  maxCount: 10
+
+- type: stack
+  id: ElementShardPondo
+  name: stack-crystal-pondo
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: PondoCrystal }
+  spawn: ElementShardPondo
+  maxCount: 10
+
+- type: stack
+  id: ElementShardPyro
+  name: stack-crystal-pyro
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: PyroCrystal }
+  spawn: ElementShardPyro
+  maxCount: 10
+
+- type: stack
+  id: ElementShardTenebro
+  name: stack-crystal-tenebro
+  icon: { sprite: /Textures/_Mystic/Objects/Materials/crystalItem.rsi, state: TenebroCrystal }
+  spawn: ElementShardTenebro
+  maxCount: 10

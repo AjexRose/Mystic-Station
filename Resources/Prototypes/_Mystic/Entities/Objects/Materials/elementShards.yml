@@ -8,8 +8,8 @@
   - type: Sharp
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: anemoCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: AnemoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: MeleeWeapon
     wideAnimationRotation: -22.5
@@ -39,8 +39,8 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: anemoCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: AnemoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1
@@ -54,8 +54,8 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: arenoCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: ArenoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1
@@ -69,8 +69,8 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: chronoCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: ChronoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1
@@ -84,8 +84,8 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: cryoCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: CryoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1
@@ -99,8 +99,8 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: dendroCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: DendroCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1
@@ -114,8 +114,8 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: electroCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: ElectroCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1
@@ -129,27 +129,12 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: geoCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: GeoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1
     stackType: ElementShardGeo
-
-#- type: entity
-#  parent: ElementShardBase
-#  id: ElementShardHelio
-#  name: helio crystal shard
-#  description: A small piece of crystal.
-#  components:
-#  - type: Sprite
-#    layers:
-#    - sprite: _Mystic/Objects/crystalItem.rsi
-#      state: helioCrystal
-#      map: [ "enum.DamageStateVisualLayers.Base" ]
-#  - type: Stack
-#    count: 1
-#    stackType: ElementShardHelio
 
 - type: entity
   parent: ElementShardBase
@@ -159,8 +144,8 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: helioCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: HelioCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1
@@ -174,8 +159,8 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: hydroCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: HydroCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1
@@ -189,8 +174,8 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: pondoCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: PondoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1
@@ -204,8 +189,8 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: pyroCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: PyroCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1
@@ -219,8 +204,8 @@
   components:
   - type: Sprite
     layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: tenebroCrystal
+    - sprite: _Mystic/Objects/Materials/crystalItem.rsi
+      state: TenebroCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: Stack
     count: 1

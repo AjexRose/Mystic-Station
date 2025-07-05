@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Made By AjexRose for Mystic Station",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "AnemoCrystal"
+    },
+    {
+      "name": "ArenoCrystal"
+    },
+    {
+      "name": "ChronoCrystal"
+    },
+    {
+      "name": "CryoCrystal"
+    },
+    {
+      "name": "DendroCrystal"
+    },
+    {
+      "name": "ElectroCrystal"
+    },
+    {
+      "name": "GeoCrystal"
+    },
+    {
+        "name": "HelioCrystal"
+    },
+    {
+        "name": "HydroCrystal"
+    },
+    {
+        "name": "PondoCrystal"
+    },
+    {
+        "name": "PyroCrystal"
+    },
+    {
+          "name": "TenebroCrystal"
+    }
+  ]
+}

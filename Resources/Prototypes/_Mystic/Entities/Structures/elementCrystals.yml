@@ -5,7 +5,7 @@
   description: A solid crystalline collection of magical energy.
   components:
     - type: Sprite
-      sprite: _Mystic/Structures/crystalStructure.rsi
+      sprite: _Mystic/Structures/Magical/crystalStructure.rsi
       state: anemoCrystal
     - type: Reflect
       reflectProb: 0.5
@@ -54,7 +54,7 @@
   suffix: Anemo
   components:
   - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
+    sprite: _Mystic/Structures/Magical//crystalStructure.rsi
     state: anemoCrystal
   - type: Destructible
     thresholds:
@@ -79,7 +79,7 @@
   suffix: Areno
   components:
     - type: Sprite
-      sprite: _Mystic/Structures/crystalStructure.rsi
+      sprite: _Mystic/Structures/Magical/crystalStructure.rsi
       state: arenoCrystal
     - type: Destructible
       thresholds:
@@ -104,7 +104,7 @@
   suffix: Chrono
   components:
   - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
+    sprite: _Mystic/Structures/Magical/crystalStructure.rsi
     state: chronoCrystal
   - type: Destructible
     thresholds:
@@ -129,7 +129,7 @@
   suffix: Cryo
   components:
   - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
+    sprite: _Mystic/Structures/Magical/crystalStructure.rsi
     state: cryoCrystal
   - type: Destructible
     thresholds:
@@ -154,7 +154,7 @@
   suffix: Dendro
   components:
   - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
+    sprite: _Mystic/Structures/Magical/crystalStructure.rsi
     state: dendroCrystal
   - type: Destructible
     thresholds:
@@ -179,7 +179,7 @@
   suffix: Electro
   components:
   - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
+    sprite: _Mystic/Structures/Magical/crystalStructure.rsi
     state: electroCrystal
   - type: Destructible
     thresholds:
@@ -204,7 +204,7 @@
   suffix: Geo
   components:
   - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
+    sprite: _Mystic/Structures/Magical/crystalStructure.rsi
     state: geoCrystal
   - type: Destructible
     thresholds:
@@ -229,7 +229,7 @@
   suffix: Helio
   components:
   - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
+    sprite: _Mystic/Structures/Magical/crystalStructure.rsi
     state: helioCrystal
   - type: Destructible
     thresholds:
@@ -254,7 +254,7 @@
   suffix: Hydro
   components:
   - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
+    sprite: _Mystic/Structures/Magical/crystalStructure.rsi
     state: hydroCrystal
   - type: Destructible
     thresholds:
@@ -279,7 +279,7 @@
   suffix: Pondo
   components:
   - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
+    sprite: _Mystic/Structures/Magical/crystalStructure.rsi
     state: pondoCrystal
   - type: Destructible
     thresholds:
@@ -304,7 +304,7 @@
   suffix: Pyro
   components:
   - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
+    sprite: _Mystic/Structures/Magical/crystalStructure.rsi
     state: pyroCrystal
   - type: Destructible
     thresholds:
@@ -329,7 +329,7 @@
   suffix: Tenebro
   components:
   - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
+    sprite: _Mystic/Structures/Magical/crystalStructure.rsi
     state: tenebroCrystal
   - type: Destructible
     thresholds:

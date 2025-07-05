@@ -1,0 +1,12 @@
+stack-crystal-anemo = anemo crystal shard
+stack-crystal-areno = areno crystal shard
+stack-crystal-chrono = chrono crystal shard
+stack-crystal-cryo = cryo crystal shard
+stack-crystal-dendro = dendro crystal shard
+stack-crystal-electro = electro crystal shard
+stack-crystal-geo = geo crystal shard
+stack-crystal-helio = helio crystal shard
+stack-crystal-hydro = hydro crystal shard
+stack-crystal-pondo = pondo crystal shard
+stack-crystal-pyro = pyro crystal shard
+stack-crystal-tenebro = tenebro crystal shard
